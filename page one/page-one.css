@@ -1,0 +1,129 @@
+/* content  */
+
+.content {
+  width: 100%;
+  height: 1000px;
+  background: radial-gradient(
+    circle,
+    rgba(255, 222, 236, 1) 54%,
+    rgba(194, 255, 251, 1) 100%
+  );
+  margin-top: var(--header-height);
+  padding-top: 50px;
+}
+
+.content-container {
+  height: 60px;
+}
+
+.content-address {
+  background-color: #fff;
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  border-left: 12px solid var(--primary-color);
+  font-family: navfont;
+  position: relative;
+}
+
+.content-address::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 60%;
+  background-color: var(--primary-color);
+  left: 12%;
+  z-index: 1;
+  border-radius: 50px;
+  opacity: 0.3;
+}
+
+.content-address-current-location {
+  font-size: 2.4rem;
+  margin-right: 40px;
+  margin-left: 10px;
+}
+
+.content-address-global {
+  font-size: 1.8rem;
+  margin-top: 4px;
+}
+
+.content-info-box {
+}
+
+.content-info-box__list {
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  background-color: #fff;
+}
+
+.content-info-box__item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-info-box__item-container {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  top: 0;
+  transition: all ease 0.2s;
+  position: relative;
+}
+
+.content-info-box__item-container:hover {
+  top: -5px;
+  transition: all ease 0.2s;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 23%);
+}
+
+.content-info-box__item-container--red {
+  background-color: rgb(250, 169, 160);
+}
+.content-info-box__item-container--green {
+  color: #fff;
+  background-color: var(--primary-color);
+}
+.content-info-box__item-container--gray {
+  background-color: rgb(209, 207, 207);
+}
+
+.content-info-box__item-header {
+  font-size: 2rem;
+}
+
+.content-info-box__item-number {
+  font-size: 1.8rem;
+}
+
+.content-information-container {
+  margin-top: 20px;
+}
+
+.content-information {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  height: 500px;
+}
+
+.content-infomation-left {
+  /* background-color: springgreen; */
+  height: 500px;
+}
+.content-infomation-right {
+  /* background-color: tomato; */
+  height: 500px;
+}
