@@ -2,12 +2,13 @@
 
 .content {
   width: 100%;
-  height: 1000px;
+  height: 1025px;
   background: url(./img/leaves1.jpg);
   margin-top: var(--header-height);
   padding-top: 50px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .content-container {
@@ -54,46 +55,102 @@
   height: 100%;
   display: flex;
   justify-content: center;
+  padding: 0 28px;
 }
 
 .content-chart-left-container {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-direction: column-reverse;
   align-items: center;
   transform: scale(1);
   transition: all ease 0.2s;
-}
-.content-information-left-container:hover {
-  transform: scale(1.02);
-  transition: all ease 0.2s;
+  width: 100%;
+  padding: 12px 0 28px 0;
 }
 
-.content-information-img-container {
-  width: 85%;
-  height: 63%;
+.content-chart-table-container {
+  width: 100%;
+  height: 87.7%;
   border-radius: 20px;
   display: flex;
-  justify-content: center;
+
+  flex-direction: column;
+  align-items: center;
 }
 
-.content-information-img-item {
+.content-chart-text-container {
   width: 100%;
-  height: auto;
-  border-radius: 20px;
+  text-align: center;
+  position: relative;
 }
 
-.content-information-text-container {
-  width: 85%;
+.content-chart-text-container::before {
+  content: "";
+  position: absolute;
+  width: 93%;
+  bottom: -2px;
+  height: 2px;
+  background-color: #ffffff5e;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.content-information-header {
-  font-size: 2rem;
+.content-chart-header h3 {
+  font-size: 2.5rem;
   margin: 10px 0;
-  line-height: 2.3rem;
+  line-height: 3rem;
+
+  display: inline-block;
 }
-.content-information-text {
-  font-size: 1.5rem;
-  line-height: 2rem;
+
+.content-chart-header {
+  display: inline-block;
+}
+.content-chart-header-table,
+.content-chart-header-container {
+  display: flex;
+  width: 92%;
+  height: 40px;
+  line-height: 26px;
+  position: relative;
+  align-items: center;
+}
+
+.content-chart-city {
+  flex: 4;
+  font-size: 2rem;
+}
+
+.content-chart-sum {
+  flex: 2;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.content-chart-today {
+  flex: 2;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.content-chart-dead {
+  text-align: center;
+  font-size: 1.6rem;
+
+  flex: 1.5;
+}
+
+.content-chart-table {
+  height: 100%;
+  width: 92%;
+  border-radius: 20px;
+  border: 2px solid #ffffff5e;
+  padding: 7px 20px 7px 20px;
+  overflow-y: scroll;
+}
+
+.content-chart-table::-webkit-scrollbar {
+  display: none;
 }
 
 .content-information-right {
@@ -102,7 +159,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 28px 20px 28px 0;
+  padding: 28px;
   justify-content: space-between;
 }
 
@@ -110,13 +167,14 @@
   font-size: 2.5rem;
   font-weight: 600;
   position: relative;
+  text-align: center;
 }
 
 .content-information-right-header::before {
   content: "";
   position: absolute;
   width: 300%;
-  bottom: -14px;
+  bottom: -20px;
   height: 2px;
   background-color: #ffffff5e;
   right: 50%;
