@@ -122,48 +122,107 @@
                 </div>
               </div>
               <div class="col pc-6 content-information-right">
-                <div class="content-information-right-header">
-                  Diễn biến dịch
-                </div>
+                <div class="content-information-right-header">Số ca nhiễm</div>
                 <div class="content-information-right-text-container">
-                  <h3 class="content-information-right-text-header">
-                    Thông báo về 9201 ca mắc mới
-                  </h3>
-                  <p class="content-information-right-text">
-                    Tính từ 17h ngày 17/9 đến 17h ngày 18/9, trên Hệ thống Quốc
-                    gia quản lý ca bệnh COVID-19 ghi nhận 9.207 ca nhiễm mới,
-                    trong đó 13 ca nhập cảnh và 9.360 ca ghi nhận trong nước TP.
-                    Hồ Chí Minh (4.237), Bình Dương (2.877), Đồng Nai (939),
-                    Long An (236), Tiền Giang (197), Kiên Giang (168), An Giang
-                    (143), Đắk Lắk (91), Đắk Nông (70), Tây Ninh (66), Quảng
-                    Bình (45), Bình Định (45), Cần Thơ (43), Đồng Tháp (30),
-                    Khánh Hòa (28), Quảng Ngãi (23), Bình Thuận (21), Hà Nội
-                    (19), Ninh Thuận (14), Bình Phước (10), Bà Rịa - Vũng Tàu
-                    (10), Quảng Trị (9), Phú Yên (8 ), Bạc Liêu (8 ), Trà Vinh
-                    (5), Nghệ An (4), Thanh Hóa (4), Cà Mau (3), Quảng Nam (3),
-                    Bến Tre (1), Lào Cai (1), Thừa Thiên Huế (1), Lâm Đồng (1)
-                    trong đó có 4.827 ca trong cộng đồng. Như vậy trong 24h giờ
-                    qua số ca nhiễm ghi nhận trong nước giảm 2.146 ca. Tại một
-                    số tỉnh như sau: TP. Hồ Chí Minh giảm 1.735 ca, Bình Dương
-                    giảm 1.136 ca, Đồng Nai tăng 594 ca, Long An giảm 37 ca,
-                    Tiền Giang tăng 79 ca. Trung bình số ca nhiễm mới trong nước
-                    ghi nhận trong 07 ngày qua: 10.723 ca/ngày. Kể từ đầu dịch
-                    đến nay Việt Nam có 677.023 ca nhiễm, đứng thứ 47/222 quốc
-                    gia và vùng lãnh thổ, trong khi với tỷ lệ số ca nhiễm/1
-                    triệu dân, Việt Nam đứng thứ 156/222 quốc gia và vùng lãnh
-                    thổ (bình quân cứ 1 triệu người có 6.881 ca nhiễm). TP. Hà
-                    Nội: Yêu cầu các đơn vị lấy mẫu 100% người có các triệu
-                    chứng nghi ngờ mắc COVID-19 như ho, sốt, rát họng, mệt mỏi,
-                    mất hoặc giảm khứu giác, vị giác... Thực hiện rà soát đúng
-                    khu vực, đúng tần suất theo chỉ đạo của Bộ Y tế và các chỉ
-                    đạo của Thành phố, Sở Y tế. Ngày 17/9/2021, Bộ Y tế đã có
-                    quyết định số 4471/QĐ-BYT ngày 17/9/2021 về việc phê duyệt
-                    có điều kiện vắc xin cho nhu cầu cấp bách trong phòng, chống
-                    dịch bệnh COVID-19 đối với vắc xin Abdala (Cuba) theo quy
-                    định tại Điều 67 Nghị định số 54/2017/NĐ-CP ngày 08/5/2012
-                    của Chính phủ quy định chi tiết một số điều và biện pháp thi
-                    hành Luật dược.
-                  </p>
+                  <div
+                    id="container"
+                    style="
+                      width: 100%;
+                      height: 500px;
+                      border-radius: 20px;
+                      /* border: 1px solid #fff; */
+                    "
+                  >
+                    <script src="https://code.highcharts.com/highcharts.js"></script>
+                    <script>
+                      //biểu đồ
+                      Highcharts.setOptions({
+                        colors: ["#ffffff"], //đổi màu cột
+                      });
+
+                      Highcharts.chart("container", {
+                        chart: {
+                          type: "pie", //column là cột line là dạng đường pie là dạng tròn
+                          backgroundColor: {
+                            linearGradient: [0, 0, 0, 0.2],
+                            stops: [
+                              [0, "rgb(0, 0, 0, 0)"],
+                              [1, "rgb(0, 0, 0, 0)"],
+                            ],
+                          },
+                        },
+                        title: {
+                          text: "SỐ CA NHIỄM", //tiêu đề
+                          style: {
+                            fontSize: "16px",
+                            // fontFamily: "Arial",
+                            fontWeight: "bold",
+                            color: "#ffffff",
+                          },
+                        },
+                        xAxis: {
+                          type: "category",
+                          title: {
+                            text: "Ngày",
+                            style: {
+                              fontSize: "20px",
+                              // fontFamily: "Arial",
+                              color: "#ffffff",
+                            },
+                          },
+                          labels: {
+                            rotation: 0,
+                            style: {
+                              fontSize: "16px",
+                              fontFamily: "navfont",
+                              color: "#ffffff",
+                            },
+                          },
+                        },
+                        yAxis: {
+                          min: 0,
+                          title: {
+                            text: "Số ca nhiễm",
+                            style: {
+                              fontSize: "16px",
+                              fontFamily: "navfont",
+                              color: "#ffffff",
+                            },
+                          },
+                        },
+                        legend: {
+                          enabled: false,
+                        },
+                        series: [
+                          {
+                            name: "Số ca nhiễm",
+                            data: [
+                              ["11/9", 1939],
+                              ["12/9", 4029],
+                              ["13/9", 8735],
+                              ["14/9", 14089],
+                              ["15/9", 5920],
+                              ["16/9", 2789],
+                              ["17/9", 7954],
+                            ],
+                            dataLabels: {
+                              enabled: true,
+                              rotation: 0,
+                              color: "#ffffff", //màu
+                              align: "center", //căn lề
+                              format: "{point.y:.0f}",
+                              y: 15, //số thang chia mong muốn
+                              style: {
+                                fontSize: "17px",
+                                // fontFamily: "Arial",
+                                color: "#ffffff",
+                              },
+                            },
+                          },
+                        ],
+                      });
+                    </script>
+                  </div>
                 </div>
                 <a href="#" class="content-information-right-btn">Xem thêm</a>
               </div>
