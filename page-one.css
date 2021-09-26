@@ -88,9 +88,8 @@
 
 .content-info-box__item-container:hover {
   top: -5px;
-  transition: all ease 0.35s;
+  transition: all ease 0.2s;
   box-shadow: 0 0 40px rgba(0, 0, 0, 23%);
-  transition-delay: 0.07s;
 }
 
 .content-info-box__item-container--red:hover {
