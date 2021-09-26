@@ -1,0 +1,165 @@
+/* content  */
+
+.content {
+  width: 100%;
+  height: 1000px;
+  background: url(https://previews.123rf.com/images/andyfrith/andyfrith1501/andyfrith150100032/36092611-hand-drawn-bacteria-germs.jpg);
+  margin-top: var(--header-height);
+  padding-top: 50px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content-container {
+  height: 60px;
+}
+
+.content-section {
+  border-radius: 20px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+
+  font-family: navfont;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid;
+  backdrop-filter: blur(20px);
+  color: #fff;
+}
+
+.content-address-section__header {
+  font-size: 2.4rem;
+  margin-right: 40px;
+  margin-left: 10px;
+}
+
+.content-information-container {
+  margin-top: 20px;
+}
+
+.content-information {
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 2px solid;
+  backdrop-filter: blur(20px);
+  color: #fff;
+}
+
+.content-information-left {
+  /* background-color: springgreen; */
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-information-left-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transform: scale(1);
+  transition: all ease 0.2s;
+}
+.content-information-left-container:hover {
+  transform: scale(1.02);
+  transition: all ease 0.2s;
+}
+
+.content-information-img-container {
+  width: 85%;
+  height: 63%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-information-img-item {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.content-information-text-container {
+  width: 85%;
+}
+.content-information-header {
+  font-size: 2rem;
+  margin: 10px 0;
+  line-height: 2.3rem;
+}
+.content-information-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content-information-right {
+  /* background-color: tomato; */
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 20px 28px 0;
+  justify-content: space-between;
+}
+
+.content-information-right-header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.content-information-right-header::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  bottom: -14px;
+  height: 2px;
+  background-color: #ffffff5e;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+.content-information-right-text-container {
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  height: 78%;
+  margin-top: 18px;
+}
+.content-information-right-text-container::-webkit-scrollbar {
+  display: none;
+}
+
+.content-information-right-text-header {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  margin-bottom: 10px;
+}
+
+.content-information-right-text {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content-information-right-btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  display: inline-block;
+  height: 40px;
+  width: 30%;
+  line-height: 4rem;
+  text-align: center;
+  transition: all ease 0.3s;
+  border-radius: 20px;
+}
+
+.content-information-right-btn:hover {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}

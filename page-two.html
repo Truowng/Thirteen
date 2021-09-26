@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./grid.css" />
-    <link rel="stylesheet" href="./page-one.css" />
+    <link rel="stylesheet" href="./page-two.css" />
     <link rel="stylesheet" href="./base.css" />
     <link
       rel="icon"
@@ -35,7 +35,7 @@
       </a>
       <div class="navbar">
         <ul class="nav-list">
-          <li class="nav-list__item nav-list__item--active">
+          <li class="nav-list__item">
             <a href="./index.html" class="nav-list__item-link"
               ><script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
               <lord-icon
@@ -48,10 +48,8 @@
             ></a>
           </li>
 
-          <li class="nav-list__item">
-            <a href="./page-two.html" class="nav-list__item-link"
-              >Bản tin Covid-19</a
-            >
+          <li class="nav-list__item nav-list__item--active">
+            <a href="#" class="nav-list__item-link">Bản tin Covid-19</a>
           </li>
           <li class="nav-list__item">
             <a href="#" class="nav-list__item-link">Chỉ đạo - Chống dịch</a>
@@ -92,56 +90,12 @@
     <div class="content">
       <div class="grid wide">
         <div class="row content-container">
-          <div class="col pc-12 content-address">
-            <h3 class="content-address-current-location">Việt Nam</h3>
-            <p class="content-address-global">Thế giới</p>
+          <div class="col pc-12 content-section">
+            <h3 class="content-address-section__header">
+              Tình hình dịch cả nước
+            </h3>
           </div>
-          <div class="col pc-12 content-info-box">
-            <div class="row content-info-box__list">
-              <div class="col pc-4 content-info-box__item">
-                <div
-                  class="
-                    content-info-box__item-container
-                    content-info-box__item-container--red
-                  "
-                >
-                  <h3 class="content-info-box__item-header">Số ca nhiễm</h3>
-                  <p class="content-info-box__item-number">677.023</p>
-                  <p class="content-info-box__item-number">
-                    Hôm nay <span style="font-weight: 600">+9201</span>
-                  </p>
-                </div>
-              </div>
-              <div class="col pc-4 content-info-box__item">
-                <div
-                  class="
-                    content-info-box__item-container
-                    content-info-box__item-container--green
-                  "
-                >
-                  <h3 class="content-info-box__item-header">Số ca khỏi</h3>
-                  <p class="content-info-box__item-number">656.023</p>
-                  <p class="content-info-box__item-number">
-                    Hôm nay <span style="font-weight: 600">+4215</span>
-                  </p>
-                </div>
-              </div>
-              <div class="col pc-4 content-info-box__item">
-                <div
-                  class="
-                    content-info-box__item-container
-                    content-info-box__item-container--gray
-                  "
-                >
-                  <h3 class="content-info-box__item-header">Số ca tử vong</h3>
-                  <p class="content-info-box__item-number">62.638</p>
-                  <p class="content-info-box__item-number">
-                    Hôm nay <span style="font-weight: 600">+12231</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div class="col pc-12 content-information-container">
             <div class="row content-information">
               <div class="col pc-7 content-information-left">
