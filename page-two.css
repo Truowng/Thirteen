@@ -1,14 +1,14 @@
+body {
+  background: url(./img/leaves1.jpg);
+}
+
 /* content  */
 
 .content {
   width: 100%;
   height: 1025px;
-  background: url(./img/leaves1.jpg);
   margin-top: var(--header-height);
   padding-top: 50px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
 }
 
 .content-container {

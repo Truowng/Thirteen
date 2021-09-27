@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="./page-one.css" />
     <link rel="stylesheet" href="./base.css" />
     <link
+      rel="stylesheet"
+      href="./font/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.min.css"
+    />
+    <link
       rel="icon"
       href="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-virus-vaccine-development-wanicon-two-tone-wanicon.png"
       type="image/gif"
       sizes="16x16"
     />
-    <title>Team 13</title>
+    <title>Homepage</title>
   </head>
 
   <body>
@@ -28,7 +32,7 @@
         <lord-icon
           src="https://cdn.lordicon.com/hsotfjpx.json"
           trigger="loop-on-hover"
-          colors="primary:#121331,secondary:#08a88a"
+          colors="primary:#000000,secondary:#08a88a"
           style="width: 50px; height: 50px"
         >
         </lord-icon>
@@ -54,7 +58,9 @@
             >
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__item-link">Chỉ đạo - Chống dịch</a>
+            <a href="./page-three.html" class="nav-list__item-link"
+              >Chỉ đạo - Chống dịch</a
+            >
           </li>
           <li class="nav-list__item">
             <a href="#" class="nav-list__item-link">Vaccine - Tiêm chủng</a>
@@ -66,27 +72,27 @@
             <a href="#" class="nav-list__item-link">Video</a>
           </li>
         </ul>
-        <div class="header-search__container">
-          <input
-            hidden
-            type="checkbox"
-            id="header-search-checkbox"
-            class="header-search-btn"
-          />
-          <label for="header-search-checkbox" class="header-search">
-            <input type="text" class="search-input" placeholder="Search" />
+      </div>
+      <div class="header-search__container">
+        <input
+          hidden
+          type="checkbox"
+          id="header-search-checkbox"
+          class="header-search-btn"
+        />
+        <label for="header-search-checkbox" class="header-search">
+          <input type="text" class="search-input" placeholder="Search" />
 
-            <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
-            <lord-icon
-              src="https://cdn.lordicon.com/msoeawqm.json"
-              trigger="loop"
-              colors="primary:#121331,secondary:#08a88a"
-              style="width: 31px; height: 31px; cursor: pointer"
-            >
-            </lord-icon>
-          </label>
-          <div class="header-hotline">Hotline: 19001099</div>
-        </div>
+          <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+          <lord-icon
+            src="https://cdn.lordicon.com/msoeawqm.json"
+            trigger="loop"
+            colors="primary:#121331,secondary:#08a88a"
+            style="width: 31px; height: 31px; cursor: pointer"
+          >
+          </lord-icon>
+        </label>
+        <div class="header-hotline">Hotline: 19001099</div>
       </div>
     </div>
     <div class="content">
@@ -217,7 +223,70 @@
           </div>
         </div>
       </div>
-      <div class="footer"></div>
+    </div>
+    <div class="footer">
+      <div class="grid wide">
+        <div class="row about">
+          <div class="col pc-4 about-product">
+            <h3 class="about-header">Về sản phẩm của nhóm</h3>
+            <p class="about-description">
+              Sản phẩm của nhóm 13 làm về thông tin dịch bệnh Covid-19 tại Việt
+              Nam. Mọi nội dung và dữ liệu trong sản phẩm đều không có thật và
+              chỉ sử dụng cho mục đích học tập.
+            </p>
+          </div>
+          <div class="col pc-8 about-us">
+            <h3 class="col pc-12 about-us__header">
+              Các thành viên trong nhóm
+            </h3>
+            <div class="row about-us__member-list">
+              <div class="col pc-4 about-us__member">
+                <div class="about-us__member-name">
+                  <i class="fas fa-user member-name-icon"></i>
+                  Trương Quốc Khánh
+                </div>
+                <div class="about-us__member-class">
+                  <i class="fas fa-users member-class-icon"></i>
+                  D18CQVT02-B
+                </div>
+                <div class="about-us__member-id">
+                  <i class="fas fa-id-card-alt member-id-icon"></i>
+                  B18DCVT234
+                </div>
+              </div>
+              <div class="col pc-4 about-us__member">
+                <div class="about-us__member-name">
+                  <i class="fas fa-user member-name-icon"></i>
+                  Nguyễn Đức Khôi
+                </div>
+                <div class="about-us__member-class">
+                  <i class="fas fa-users member-class-icon"></i>
+                  D18CQVT06-B
+                </div>
+                <div class="about-us__member-id">
+                  <i class="fas fa-id-card-alt member-id-icon"></i>
+                  B18DCVT238
+                </div>
+              </div>
+              <div class="col pc-4 about-us__member">
+                <div class="about-us__member-name">
+                  <i class="fas fa-user member-name-icon"></i>
+                  Lê Đăng Khoa
+                </div>
+                <div class="about-us__member-class">
+                  <i class="fas fa-users member-class-icon"></i>
+                  D18CQVT03-B
+                </div>
+                <div class="about-us__member-id">
+                  <i class="fas fa-id-card-alt member-id-icon"></i>
+                  B18DCVT235
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col pc-12 copyright">Sản phẩm thuộc về nhóm 13 © 2021</div>
+      </div>
     </div>
   </body>
 </html>
