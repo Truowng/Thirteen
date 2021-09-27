@@ -1,5 +1,5 @@
 body {
-  background: url(./img/leaves1.jpg);
+  background: url(./img/leaves2.jpg);
 }
 
 /* content  */
@@ -147,7 +147,7 @@ body {
   border: 2px solid #ffffff5e;
   padding: 7px 20px 7px 20px;
   overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(255, 255, 255, 0.07);
 }
 
 .content-chart-table::-webkit-scrollbar {
@@ -174,7 +174,7 @@ body {
 .content-information-right-header::before {
   content: "";
   position: absolute;
-  width: 300%;
+  width: 263%;
   bottom: -20px;
   height: 2px;
   background-color: #ffffff5e;
@@ -183,11 +183,9 @@ body {
 }
 
 .content-information-right-text-container {
-  overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
   height: 78%;
   margin-top: 18px;
+  /* width: 118%; */
 }
 .content-information-right-text-container::-webkit-scrollbar {
   display: none;
