@@ -139,7 +139,7 @@ body {
   transition: all ease 0.2s;
 }
 
-.content-information-img-container {
+.content-information-video-container {
   width: 85%;
   height: 63%;
   border-radius: 20px;
@@ -147,7 +147,7 @@ body {
   justify-content: center;
 }
 
-.content-information-img-item {
+.content-information-video {
   width: 100%;
   height: auto;
   border-radius: 20px;

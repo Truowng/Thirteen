@@ -182,6 +182,10 @@ body {
   transform: translateX(50%);
 }
 
+.content-information-right-header--switch::before {
+  width: 330%;
+}
+
 .content-information-right-text-container {
   height: 78%;
   margin-top: 18px;

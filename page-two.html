@@ -24,7 +24,7 @@
 
   <body>
     <div class="header">
-      <a href="#" class="header-logo">
+      <a href="./index.html" class="header-logo">
         thirteen
         <scrispt
           src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"
@@ -66,7 +66,7 @@
             >
           </li>
           <li class="nav-list__item">
-            <a href="#" class="nav-list__item-link">Hướng dẫn</a>
+            <a href="./page-five.html" class="nav-list__item-link">Hướng dẫn</a>
           </li>
           <li class="nav-list__item">
             <a href="#" class="nav-list__item-link">Video</a>
@@ -816,7 +816,7 @@
                           },
                         },
                         title: {
-                          text: "SỐ CA NHIỄM", //tiêu đề
+                          text: "SỐ LIỆU THỐNG KÊ VỀ DỊCH COVID-19 TẠI VIỆT NAM", //tiêu đề
                           style: {
                             fontSize: "16px",
                             // fontFamily: "Arial",
@@ -824,66 +824,52 @@
                             color: "#ffffff",
                           },
                         },
-                        xAxis: {
-                          type: "category",
-                          title: {
-                            text: "Ngày",
-                            style: {
-                              fontSize: "20px",
-                              // fontFamily: "Arial",
-                              color: "#ffffff",
-                            },
-                          },
-                          labels: {
-                            rotation: 0,
-                            style: {
-                              fontSize: "16px",
-                              fontFamily: "navfont",
-                              color: "#ffffff",
-                            },
+                        tooltip: {
+                          pointFormat:
+                            "{series.name}: <b>{point.percentage:.1f}%</b>",
+                        },
+                        accessibility: {
+                          point: {
+                            valueSuffix: "ca",
                           },
                         },
-                        yAxis: {
-                          min: 0,
-                          title: {
-                            text: "Số ca nhiễm",
-                            style: {
-                              fontSize: "16px",
-                              fontFamily: "navfont",
-                              color: "#ffffff",
-                            },
-                          },
-                        },
-                        legend: {
-                          enabled: false,
-                        },
-                        series: [
-                          {
-                            name: "Số ca nhiễm",
-                            data: [
-                              ["11/9", 1939],
-                              ["12/9", 4029],
-                              ["13/9", 8735],
-                              ["14/9", 14089],
-                              ["15/9", 5920],
-                              ["16/9", 2789],
-                              ["17/9", 7954],
-                              ["18/9", 3726],
-                            ],
+                        plotOptions: {
+                          pie: {
+                            allowPointSelect: true,
+                            cursor: "pointer",
 
                             dataLabels: {
                               enabled: true,
-                              rotation: 0,
-                              color: "#ffffff", //màu
-                              align: "center", //căn lề
-                              format: "{point.y:.0f}",
-                              y: 15, //số thang chia mong muốn
-                              style: {
-                                fontSize: "16px",
-                                // fontFamily: "Arial",
-                                color: "#ffffff",
-                              },
+                              format:
+                                "<b>{point.name}</b>: {point.percentage:.1f} %",
                             },
+                          },
+                        },
+                        series: [
+                          {
+                            name: "Số lượng người",
+                            colorByPoint: true,
+                            data: [
+                              {
+                                name: "Nhiễm",
+
+                                y: 799000,
+
+                                color: "rgba(255,255,54,0.5)",
+                              },
+                              {
+                                name: "Tử vong",
+                                y: 228758,
+                                sliced: true,
+                                selected: true,
+                                // color: "rgba(255,0,105,0.4)",
+                              },
+                              {
+                                name: "Khỏi bệnh",
+                                y: 527926,
+                                color: "rgba(52,169,152,0.3)",
+                              },
+                            ],
                           },
                         ],
                       });
