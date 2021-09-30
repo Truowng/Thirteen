@@ -119,14 +119,468 @@
                     content-info-box__item-container--green
                   "
                 >
-                  <h3 class="content-info-box__item-header">Khai báo y tế</h3>
+                  <h3 class="content-info-box__item-header">KHAI BÁO Y TẾ</h3>
                   <p class="content-info-box__item-text">
                     Vì sức khỏe cộng đồng
                   </p>
                 </label>
               </div>
               <div class="col pc-12 content-info-form__item">
-                <div class="content-info-form__item-container"></div>
+                <div class="content-info-form__item-container">
+                  <div class="content-info-form__item-user">
+                    <div class="content-info-form__item-name-container">
+                      <h3
+                        class="
+                          content-info-form__item-label
+                          content-info-form__item-label--name
+                        "
+                      >
+                        Họ và tên
+                      </h3>
+                      <div class="content-info-form__item-input-container">
+                        <input
+                          type="text"
+                          class="
+                            content-info-form__item-input--name
+                            content-info-form__item-input
+                          "
+                          placeholder="Họ và tên"
+                        />
+                      </div>
+                    </div>
+                    <div class="content-info-form__item-id-container">
+                      <h3
+                        class="
+                          content-info-form__item-label
+                          content-info-form__item-label--id
+                        "
+                      >
+                        Số CCCD/CMTND
+                      </h3>
+                      <div class="content-info-form__item-input-container">
+                        <input
+                          type="text"
+                          class="
+                            content-info-form__item-input--id
+                            content-info-form__item-input
+                          "
+                          placeholder="Số CCCD/CMTND"
+                        />
+                      </div>
+                    </div>
+                    <div class="content-info-form__item-phone-container">
+                      <h3
+                        class="
+                          content-info-form__item-label
+                          content-info-form__item-label--phone
+                        "
+                      >
+                        Số điện thoại
+                      </h3>
+                      <div class="content-info-form__item-input-container">
+                        <input
+                          type="text"
+                          class="
+                            content-info-form__item-input--phone
+                            content-info-form__item-input
+                          "
+                          placeholder="Số điện thoại"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-info-form__item-address">
+                    <div class="content-info-form__item-city-container">
+                      <h3
+                        class="
+                          content-info-form__item-label
+                          content-info-form__item-label--city
+                        "
+                      >
+                        Tỉnh/Thành phố
+                      </h3>
+                      <div class="content-info-form__item-input-container">
+                        <input
+                          type="text"
+                          class="
+                            content-info-form__item-input--city
+                            content-info-form__item-input
+                          "
+                          placeholder="Tỉnh/Thành phố"
+                        />
+                      </div>
+                    </div>
+                    <div class="content-info-form__item-district-container">
+                      <h3
+                        class="
+                          content-info-form__item-label
+                          content-info-form__item-label--district
+                        "
+                      >
+                        Quận/Huyện
+                      </h3>
+                      <div class="content-info-form__item-input-container">
+                        <input
+                          type="text"
+                          class="
+                            content-info-form__item-input--district
+                            content-info-form__item-input
+                          "
+                          placeholder="Quận/Huyện"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-info-form__item-address">
+                    <div class="content-info-form__item-ward-container">
+                      <h3
+                        class="
+                          content-info-form__item-label
+                          content-info-form__item-label--ward
+                        "
+                      >
+                        Phường/Xã
+                      </h3>
+                      <div class="content-info-form__item-input-container">
+                        <input
+                          type="text"
+                          class="
+                            content-info-form__item-input--ward
+                            content-info-form__item-input
+                          "
+                          placeholder="Phường/Xã"
+                        />
+                      </div>
+                    </div>
+                    <div class="content-info-form__item-home-address-container">
+                      <h3
+                        class="
+                          content-info-form__item-label
+                          content-info-form__item-label--home-address
+                        "
+                      >
+                        Địa chỉ
+                      </h3>
+                      <div class="content-info-form__item-input-container">
+                        <input
+                          type="text"
+                          class="
+                            content-info-form__item-input--home-address
+                            content-info-form__item-input
+                          "
+                          placeholder="Địa chỉ"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content-info-form__item-table-container">
+                    <h3 class="content-info-form__item-table-header">
+                      Trong vòng 14 ngày qua anh/chị thấy có xuất hiện triệu
+                      chứng nào sau đây không?
+                    </h3>
+                    <table class="content-info-form__item-table" cellspacing="0" border="1">
+                      <tr>
+                        <th
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Triệu chứng
+                        </th>
+                        <th class="content-info-form__item-table__yes-column">
+                          Có
+                        </th>
+                        <th class="content-info-form__item-table__no-column">
+                          Không
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Sốt
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                         
+                           <label for="custom-checkbox--1" class="custom-checkbox-container">
+                             <input
+                         hidden
+                         type="checkbox"
+                         class="custom-checkbox-switch"
+                         id="custom-checkbox--1"
+                       />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                           <label for="custom-checkbox--2" class="custom-checkbox-container">
+                             <input
+                            hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--2"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Ho
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                           <label for="custom-checkbox--3" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--3"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                          <label for="custom-checkbox--4" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--4"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Khó thở
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                           <label for="custom-checkbox--5" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--5"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                           <label for="custom-checkbox--6" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--6"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Viêm phổi
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                           <label for="custom-checkbox--7" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--7"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                           <label for="custom-checkbox--8" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--8"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Đau họng
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                           <label for="custom-checkbox--9" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--9"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                           <label for="custom-checkbox--10" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--10"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Mệt mỏi
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                           <label for="custom-checkbox--11" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--11"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                         
+                          <label for="custom-checkbox--12" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--12"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="content-info-form__item-table-container">
+                    <h3 class="content-info-form__item-table-header">
+                      Trong vòng 14 ngày qua anh/chị thấy có tiếp xúc với?
+                    </h3>
+                    <table class="content-info-form__item-table" cellspacing="0" border="1">
+                      <tr>
+                        <th
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Người
+                        </th>
+                        <th class="content-info-form__item-table__yes-column">
+                          Có
+                        </th>
+                        <th class="content-info-form__item-table__no-column">
+                          Không
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Người bệnh hoặc nghi ngờ, mắc bệnh COVID-19
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                         
+                           <label for="custom-checkbox--13" class="custom-checkbox-container">
+                             <input
+                         hidden
+                         type="checkbox"
+                         class="custom-checkbox-switch"
+                         id="custom-checkbox--13"
+                       />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                           <label for="custom-checkbox--14" class="custom-checkbox-container">
+                             <input
+                            hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--14"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Người từ nước có bệnh COVID-19
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                           <label for="custom-checkbox--15" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--15"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                          <label for="custom-checkbox--16" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--16"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td
+                          class="content-info-form__item-table__symptom-column"
+                        >
+                          Người có biểu hiện (Sốt, ho, khó thở, Viêm phổi)
+                        </th>
+                        <td class="content-info-form__item-table__yes-column">
+                           <label for="custom-checkbox--17" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--17"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                        <td class="content-info-form__item-table__no-column">
+                           <label for="custom-checkbox--18" class="custom-checkbox-container">
+                             <input
+                          hidden
+                            type="checkbox"
+                            class="custom-checkbox-switch"
+                            id="custom-checkbox--18"
+                          />
+                            <i class="fas fa-check custom-checkbox-icon"></i>
+                          </label>
+                        </th>
+                      </tr>
+                      
+                    </table>
+                  </div>
+                  
+                </div>
               </div>
             </div>
           </div>

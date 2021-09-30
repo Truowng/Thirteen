@@ -1,6 +1,6 @@
 body {
-  background: url(./img/leaves14.jfif);
-  background-position: center;
+  background: url(./img/leaves19.jfif);
+  background-position: top;
 }
 
 /* content  */
@@ -58,15 +58,15 @@ body {
 }
 
 .content-info-box-switch:checked ~ .content {
-  height: 1847px;
+  height: 2147px;
 }
 
 .content-info-box-switch:checked ~ .content .content-info-box__list {
-  height: 900px;
+  height: 1300px;
   transition: all ease 0.5s;
 }
 .content-info-box-switch:checked ~ .content .content-info-box__item {
-  height: 23%;
+  height: 230px;
   margin-top: 24px;
   transition: all ease 0.2s;
 }
@@ -80,11 +80,11 @@ body {
 }
 
 .content-info-box__item {
-  height: 105%;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all ease 0.4s;
+  transition: all ease 0.3s;
 }
 
 .content-info-box__item-container {
@@ -94,7 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   cursor: pointer;
   /* box-shadow: 0 0 20px rgb(0 0 0 / 9%); */
   top: 0;
@@ -123,11 +123,15 @@ body {
 }
 
 .content-info-box__item-header {
-  font-size: 2rem;
+  font-size: 3.5rem;
+  display: inline-block;
+  user-select: none;
+  margin-bottom: 26px;
 }
 
 .content-info-box__item-text {
-  font-size: 1.8rem;
+  font-size: 2.7rem;
+  user-select: none;
 }
 
 .content-info-form__item {
@@ -144,7 +148,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  cursor: pointer;
   top: 0;
   transition: all ease 0.3s;
   position: relative;
@@ -153,6 +156,162 @@ body {
   border: 1px solid #fff;
   margin-top: 20px;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.content-info-form__item-address,
+.content-info-form__item-user {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+.content-info-form__item-home-address-container,
+.content-info-form__item-ward-container,
+.content-info-form__item-district-container,
+.content-info-form__item-city-container,
+.content-info-form__item-name-container,
+.content-info-form__item-id-container,
+.content-info-form__item-phone-container {
+  flex: 1;
+}
+
+.content-info-form__item-id-container {
+  margin: 0 20px;
+}
+
+.content-info-form__item-ward-container,
+.content-info-form__item-city-container {
+  margin-right: 20px;
+}
+
+.content-info-form__item-label {
+  font-size: 1.5rem;
+  padding-bottom: 8px;
+}
+
+.content-info-form__item-input-container {
+  height: 35px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content-info-form__item-input {
+  outline: none;
+  margin-left: 10px;
+  height: 35px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  line-height: 35px;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.content-info-form__item-table-container {
+  width: 90%;
+}
+
+.content-info-form__item-table {
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.content-info-form__item-table-header {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.content-info-form__item-table__no-column,
+.content-info-form__item-table__yes-column,
+.content-info-form__item-table__symptom-column {
+  font-size: 1.4rem;
+}
+
+.content-info-form__item-table__symptom-column {
+  width: 100%;
+  text-align: center;
+}
+
+tr:first-child .content-info-form__item-table__symptom-column {
+  border-top-left-radius: 10px;
+}
+tr:last-child .content-info-form__item-table__symptom-column {
+  border-bottom-left-radius: 10px;
+}
+
+.content-info-form__item-table__yes-column {
+  text-align: center;
+  padding: 8px 32px;
+}
+.content-info-form__item-table__no-column {
+  text-align: center;
+  padding: 8px 20px;
+}
+
+tr:first-child .content-info-form__item-table__no-column {
+  border-top-right-radius: 10px;
+}
+tr:last-child .content-info-form__item-table__no-column {
+  border-bottom-right-radius: 10px;
+}
+
+.content-info-form__item-table__checkbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 50px;
+  background-color: transparent;
+}
+
+.custom-checkbox-container {
+  width: 19px;
+  height: 19px;
+  border-radius: 2px;
+  border: 1px solid #808080;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all ease 0.2s;
+}
+
+.custom-checkbox-container:hover {
+  transition: all ease 0.2s;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.25),
+    0 0 2px rgba(255, 255, 255, 0.25), 0 0 3px rgba(255, 255, 255, 0.25),
+    0 0 4px rgba(255, 255, 255, 0.25), 0 0 5px rgba(255, 255, 255, 0.25),
+    0 0 6px rgba(255, 255, 255, 0.25), 0 0 7px rgba(255, 255, 255, 0.25);
+}
+
+.custom-checkbox-icon {
+  opacity: 0;
+  transition: all ease 0.2s;
+  line-height: 25px;
+  font-size: 1.1rem;
+}
+#custom-checkbox--1:checked ~ .custom-checkbox-icon,
+#custom-checkbox--2:checked ~ .custom-checkbox-icon,
+#custom-checkbox--3:checked ~ .custom-checkbox-icon,
+#custom-checkbox--4:checked ~ .custom-checkbox-icon,
+#custom-checkbox--5:checked ~ .custom-checkbox-icon,
+#custom-checkbox--6:checked ~ .custom-checkbox-icon,
+#custom-checkbox--7:checked ~ .custom-checkbox-icon,
+#custom-checkbox--8:checked ~ .custom-checkbox-icon,
+#custom-checkbox--9:checked ~ .custom-checkbox-icon,
+#custom-checkbox--10:checked ~ .custom-checkbox-icon,
+#custom-checkbox--11:checked ~ .custom-checkbox-icon,
+#custom-checkbox--12:checked ~ .custom-checkbox-icon,
+#custom-checkbox--13:checked ~ .custom-checkbox-icon,
+#custom-checkbox--14:checked ~ .custom-checkbox-icon,
+#custom-checkbox--15:checked ~ .custom-checkbox-icon,
+#custom-checkbox--16:checked ~ .custom-checkbox-icon,
+#custom-checkbox--17:checked ~ .custom-checkbox-icon,
+#custom-checkbox--18:checked ~ .custom-checkbox-icon {
+  opacity: 1;
+  transition: all ease 0.2s;
 }
 
 .content-information-container {
@@ -160,8 +319,8 @@ body {
 }
 
 .content-information {
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
   height: 600px;
   background-color: rgba(0, 0, 0, 0.25);
   border: 2px solid;
