@@ -10,6 +10,7 @@ body {
   height: 1147px;
   margin-top: var(--header-height);
   padding-top: 50px;
+  transition: all ease 0.3s;
 }
 
 .content-container {
@@ -22,7 +23,6 @@ body {
   display: flex;
   align-items: center;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.09);
-
   font-family: navfont;
   position: relative;
   background-color: rgba(0, 0, 0, 0.25);
@@ -53,13 +53,38 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
   border: 2px solid #fff;
   backdrop-filter: blur(20px);
+  transition: all ease 0.25s;
+  overflow: hidden;
+}
+
+.content-info-box-switch:checked ~ .content {
+  height: 1847px;
+}
+
+.content-info-box-switch:checked ~ .content .content-info-box__list {
+  height: 900px;
+  transition: all ease 0.5s;
+}
+.content-info-box-switch:checked ~ .content .content-info-box__item {
+  height: 23%;
+  margin-top: 24px;
+  transition: all ease 0.2s;
+}
+
+.content-info-box-switch:checked
+  ~ .content
+  .content-info-box__list
+  .content-info-box__item-container {
+  height: 89.3%;
+  transition: all ease 0.3s;
 }
 
 .content-info-box__item {
-  height: 100%;
+  height: 105%;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all ease 0.4s;
 }
 
 .content-info-box__item-container {
@@ -70,6 +95,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  cursor: pointer;
   /* box-shadow: 0 0 20px rgb(0 0 0 / 9%); */
   top: 0;
   transition: all ease 0.3s;
@@ -100,8 +126,33 @@ body {
   font-size: 2rem;
 }
 
-.content-info-box__item-number {
+.content-info-box__item-text {
   font-size: 1.8rem;
+}
+
+.content-info-form__item {
+  height: 76.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.content-info-form__item-container {
+  width: 80%;
+  height: 89%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  cursor: pointer;
+  top: 0;
+  transition: all ease 0.3s;
+  position: relative;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .content-information-container {
