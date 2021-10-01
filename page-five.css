@@ -58,7 +58,7 @@ body {
 }
 
 .content-info-box-switch:checked ~ .content {
-  height: 2147px;
+  height: 2249px;
 }
 
 .content-info-box-switch:checked ~ .content .content-info-box__list {
@@ -187,6 +187,7 @@ body {
 .content-info-form__item-label {
   font-size: 1.5rem;
   padding-bottom: 8px;
+  user-select: none;
 }
 
 .content-info-form__item-input-container {
@@ -199,7 +200,7 @@ body {
 
 .content-info-form__item-input {
   outline: none;
-  margin-left: 10px;
+  padding-left: 10px;
   height: 35px;
   background-color: transparent;
   color: #fff;
@@ -221,11 +222,13 @@ body {
 .content-info-form__item-table-header {
   font-size: 1.7rem;
   text-align: center;
+  user-select: none;
 }
 .content-info-form__item-table__no-column,
 .content-info-form__item-table__yes-column,
 .content-info-form__item-table__symptom-column {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+  user-select: none;
 }
 
 .content-info-form__item-table__symptom-column {
@@ -243,10 +246,12 @@ tr:last-child .content-info-form__item-table__symptom-column {
 .content-info-form__item-table__yes-column {
   text-align: center;
   padding: 8px 32px;
+  user-select: none;
 }
 .content-info-form__item-table__no-column {
   text-align: center;
   padding: 8px 20px;
+  user-select: none;
 }
 
 tr:first-child .content-info-form__item-table__no-column {
@@ -313,6 +318,33 @@ tr:last-child .content-info-form__item-table__no-column {
   opacity: 1;
   transition: all ease 0.2s;
 }
+
+.content-info-form-btn {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.8rem;
+  display: inline-block;
+  height: 40px;
+  width: 30%;
+  line-height: 3.6rem;
+  text-align: center;
+  transition: all ease 0.3s;
+  border-radius: 20px;
+  border: 1px solid #808080;
+}
+
+.content-info-form-btn:hover {
+  transition: all ease 0.3s;
+  border-radius: 20px;
+  width: 40%;
+  border: 1px solid #fff;
+  box-shadow: 0 0 1px rgb(255 255 255 / 25%), 0 0 2px rgb(255 255 255 / 25%),
+    0 0 3px rgb(255 255 255 / 25%), 0 0 4px rgb(255 255 255 / 25%),
+    0 0 5px rgb(255 255 255 / 25%), 0 0 6px rgb(255 255 255 / 25%),
+    0 0 7px rgb(255 255 255 / 25%);
+}
+
+/* content information  */
 
 .content-information-container {
   margin-top: 20px;
