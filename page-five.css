@@ -58,11 +58,11 @@ body {
 }
 
 .content-info-box-switch:checked ~ .content {
-  height: 2249px;
+  height: 2366px;
 }
 
 .content-info-box-switch:checked ~ .content .content-info-box__list {
-  height: 1300px;
+  height: 1417px;
   transition: all ease 0.5s;
 }
 .content-info-box-switch:checked ~ .content .content-info-box__item {
@@ -142,7 +142,7 @@ body {
 
 .content-info-form__item-container {
   width: 80%;
-  height: 89%;
+  height: 94%;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -171,10 +171,13 @@ body {
 .content-info-form__item-city-container,
 .content-info-form__item-name-container,
 .content-info-form__item-id-container,
+.content-info-form__item-date-of-birth-container,
+.content-info-form__item-sex-container,
+.content-info-form__item-bhyt-container,
 .content-info-form__item-phone-container {
   flex: 1;
 }
-
+.content-info-form__item-sex-container,
 .content-info-form__item-id-container {
   margin: 0 20px;
 }
@@ -188,6 +191,7 @@ body {
   font-size: 1.5rem;
   padding-bottom: 8px;
   user-select: none;
+  margin-left: 9px;
 }
 
 .content-info-form__item-input-container {
@@ -195,25 +199,31 @@ body {
   border-radius: 8px;
   border: 1px solid #ddd;
   width: 100%;
-  overflow: hidden;
 }
 
 .content-info-form__item-input {
   outline: none;
   padding-left: 10px;
-  height: 35px;
+  padding-top: 1px;
+  height: 34px;
   background-color: transparent;
   color: #fff;
   border: none;
   line-height: 35px;
   font-size: 1.4rem;
   width: 100%;
+  overflow: hidden;
+}
+
+.content-info-form__item-input:focus {
+  animation: neonLight ease 0.5s infinite alternate-reverse;
+  border-radius: 8px;
 }
 
 .content-info-form__item-input::placeholder {
   color: rgb(184, 182, 182);
 }
-
+.content-info-form__item-input--date-of-birth,
 .content-info-form__item-input--name {
   text-transform: uppercase;
 }
@@ -346,10 +356,19 @@ tr:last-child .content-info-form__item-table__no-column {
   border-radius: 20px;
   width: 40%;
   border: 1px solid #fff;
-  box-shadow: 0 0 1px rgb(255 255 255 / 25%), 0 0 2px rgb(255 255 255 / 25%),
-    0 0 3px rgb(255 255 255 / 25%), 0 0 4px rgb(255 255 255 / 25%),
-    0 0 5px rgb(255 255 255 / 25%), 0 0 6px rgb(255 255 255 / 25%),
-    0 0 7px rgb(255 255 255 / 25%);
+  animation: neonLight ease 0.6s infinite alternate-reverse;
+}
+@keyframes neonLight {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0 0 1px rgb(255 255 255 / 25%), 0 0 2px rgb(255 255 255 / 25%),
+      0 0 3px rgb(255 255 255 / 25%), 0 0 4px rgb(255 255 255 / 25%),
+      0 0 5px rgb(255 255 255 / 25%), 0 0 6px rgb(255 255 255 / 25%),
+      0 0 7px rgb(255 255 255 / 25%), 0 0 8px rgb(255 255 255 / 25%),
+      0 0 9px rgb(255 255 255 / 25%), 0 0 10px rgb(255 255 255 / 25%);
+  }
 }
 
 /* content information  */
