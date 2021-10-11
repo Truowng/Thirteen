@@ -223,3 +223,7 @@ body {
   color: #000;
   width: 100%;
 }
+
+.about-us__member {
+  text-align: center;
+}

@@ -571,3 +571,7 @@ tr:last-child .content-info-form__item-table__no-column {
   color: #000;
   width: 100%;
 }
+
+.about-us__member {
+  text-align: center;
+}
