@@ -182,6 +182,20 @@ body {
   margin-bottom: 20px;
   text-align: center;
 }
+
+.about-logo {
+  text-align: center;
+  text-decoration: none;
+  margin-top: -9px;
+  font-size: 4.5rem;
+  font-family: headerfont;
+  color: #fff;
+  font-weight: 00;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
 .about-description {
   font-size: 1.5rem;
   line-height: 1.8rem;
@@ -203,10 +217,11 @@ body {
 
 .member-class-icon {
   margin-right: 5px;
+  margin-left: -41px;
 }
 
 .member-id-icon {
-  margin-left: 1px;
+  margin-left: -49px;
   margin-right: 6px;
 }
 
